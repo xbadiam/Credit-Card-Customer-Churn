@@ -18,15 +18,15 @@ from warnings import filterwarnings
 filterwarnings('ignore')
 
 
-def getTotalCountAndLabelFromValueFeatureByGroup(data_copy, feature):
+def getTotalCountAndLabelFromValueFeatureByGroup(data, feature):
     """
     Devuelve el recuento y las etiquetas únicas de una característica dada.
     Args:
-        data_copy (pd.DataFrame): Dataset donde buscar los valores.
+        data (pd.DataFrame): Dataset donde buscar los valores.
         feature (str): Nombre de la columna a analizar.
     Returns:
         tuple: (count, label)
     """
-    count = data_copy[feature].value_counts()
-    label = data_copy[feature].value_counts().index.tolist()
+    count = data[feature].value_counts()
+    label = data[feature].value_counts().index.tolist()
     return count, label
