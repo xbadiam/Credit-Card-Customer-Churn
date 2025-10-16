@@ -1,6 +1,5 @@
 
 
-%%writefile /content/Credit-Card-Customer-Churn/src/eda_utilities.py
 # Importing libraries
 
 # Data manipulation and visualization.
